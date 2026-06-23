@@ -6,14 +6,14 @@ It contains only the public website, legal-support drafts, and validation/deploy
 
 Production domain:
 
-- <https://focusrss.top/>
+- <https://www.focusrss.top/>
 
 Important routes:
 
-- <https://focusrss.top/privacy/>
-- <https://focusrss.top/terms/>
-- <https://focusrss.top/support/>
-- <https://focusrss.top/privacy-choices/>
+- <https://www.focusrss.top/privacy/>
+- <https://www.focusrss.top/terms/>
+- <https://www.focusrss.top/support/>
+- <https://www.focusrss.top/privacy-choices/>
 
 Local validation:
 
