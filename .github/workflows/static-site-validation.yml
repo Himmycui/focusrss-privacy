@@ -1,0 +1,36 @@
+name: Static Site Validation
+
+on:
+  pull_request:
+    paths:
+      - "site/**"
+      - "docs/legal/**"
+      - "scripts/validate-site.py"
+      - "scripts/validate-site.sh"
+      - ".github/workflows/deploy-pages.yml"
+      - ".github/workflows/static-site-validation.yml"
+  push:
+    branches:
+      - main
+    paths:
+      - "site/**"
+      - "docs/legal/**"
+      - "scripts/validate-site.py"
+      - "scripts/validate-site.sh"
+      - ".github/workflows/deploy-pages.yml"
+      - ".github/workflows/static-site-validation.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    name: Validate static legal site
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Validate routes, links, disclosures, and blockers
+        run: ./scripts/validate-site.sh

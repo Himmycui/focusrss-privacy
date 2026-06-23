@@ -1,0 +1,58 @@
+app:
+  name: FocusRSS
+  bundle_id: com.xingshi356.focusrss
+  developer_display_name: 崔华
+  legal_entity_name: 崔华
+  country_or_region: 中国
+  website_domain: "focusrss.top"
+
+contact:
+  support_email: himmy.cui@outlook.com
+  privacy_email: himmy.cui@outlook.com
+  business_email: himmy.cui@outlook.com
+  public_address: 上海市谷阳北路2388号
+  public_phone: +8613816743023
+
+local_storage:
+  rss_subscriptions: true
+  feed_articles: true
+  focus_cards: true
+  reading_history: true
+  ai_summaries: true
+  stored_on_device: true
+  icloud_sync: false
+  default_retention_days: 90
+
+byok_ai:
+  enabled: true
+  sends_focus_question: true
+  sends_user_prompt: true
+  sends_selected_articles: true
+  sends_source_urls: true
+  sends_full_subscription_list: false
+  api_key_storage: "iOS Keychain"
+
+hosted_ai:
+  enabled_at_launch: false
+  stores_request_content: false
+  stores_response_content: false
+  stores_usage_metadata: true
+  log_retention_days: 14
+
+accounts:
+  account_creation_enabled: false
+  sign_in_with_apple: false
+  in_app_account_deletion: false
+
+analytics:
+  enabled: false
+  provider: null
+
+crash_reporting:
+  enabled: false
+  provider: null
+
+purchases:
+  lifetime_purchase: true
+  auto_renewable_subscription: true
+  subscription_service: "Hosted AI"
